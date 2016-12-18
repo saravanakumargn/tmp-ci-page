@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Page</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link href="page.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-container">
+            <div class="sidebar">
+                <div class="header">
+                    <span>Inventory</span>
+                    <button class="btn btn-primary" type="submit">Select All</button>
+                    <button class="btn btn-primary" type="submit">Refresh</button>
+                </div>
+                <input type="checkbox" name="vehicle" value="Bike">1<br>
+<input type="checkbox" name="vehicle" value="Car">2
+            </div>
+            <div class="content">
+<!--
+                <div class="formStyle">
+                    
+                </div>
+-->
+                <div class="half-containers1">
+                    <div class="inner">
+                        <div>
+                            <ul class="nav nav-tabs marginBottom" id="myTab">
+                                <li class="active">
+                                    <a href="#profile">
+                                        <button class="close closeTab" type="button">×</button>Ontology1</a>
+
+                                </li>
+                                <li>
+                                    <a href="#messages">
+                                        <button class="close closeTab" type="button">×</button>Ontology2</a>
+
+                                </li>
+                                <li>
+                                    <a href="#settings">
+                                        <button class="close closeTab" type="button">×</button>Ontology3</a>
+
+                                </li>
+                                <li class="add-btn"><div>
+        <div class="operationDiv">
+            <button type="submit" class="btn" id="newAddButton">+</button>
+        </div>
+    </div></li>
+                            </ul>
+                            
+    
+
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="profile">
+                                    <div class="container-fluid">
+                                       <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">Select Ontology</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="filestyle" data-icon="false" data-buttonName="btn-primary">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail3" class="col-sm-4 control-label">Select XPA file</label>
+                            <div class="col-sm-8">
+                                <input type="file" class="filestyle" data-icon="false" data-buttonName="btn-primary">
+                            </div>
+                        </div>
+
+                    </form>
+                                        <div class="row">
+                                            <div class="col-xs-7">
+                                                <h4><div class="text-center">Parameter List</div></h4>
+                                                <form class="form-horizontal">
+
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-4 control-label">Parameter1</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-4 control-label">Parameter2</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-4 control-label">Parameter3</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control">
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                            <div class="col-xs-5">
+                                                <form class="form-horizontal">
+
+                                                    <div class="form-group">
+                                                        <label for="inputEmail3" class="col-sm-4 control-label">Algorithm</label>
+                                                        <div class="col-sm-8">
+                                                            <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Select
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li role="separator" class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <button type="button" class="btn btn-primary">Run</button>
+                                                        <button type="button" class="btn btn-primary">Stop</button>
+                                                    </div>
+
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="messages">Pane 2</div>
+                                <div class="tab-pane" id="settings">Pane 3</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="logs">
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>Ok</p>
+                        <p>Error</p>
+                        <p>Ok</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>Ok</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>Ok</p>
+                        <p>Error</p>
+                        <p>Ok</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>Ok</p>
+                        <p>Error</p>
+                        <p>success</p>
+                        <p>Error</p>
+                        <p>Error</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap-filestyle.js"></script>
+
+</body>
+
+</html>
